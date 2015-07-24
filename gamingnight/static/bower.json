@@ -1,0 +1,19 @@
+{
+  "name": "Gaming Night Frontend",
+  "version": "0.0.0",
+  "homepage": "https://github.com/hunter212yy/gejmingnajt",
+  "authors": [
+    "Dariusz Niespodziany <d.niespodziany@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
