@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -26,7 +25,6 @@ SECRET_KEY = 'mwqqns8(e2q#izz3s8k@0h589w-26kkbxy9fr%*rgi71mrv90w'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -55,7 +53,9 @@ ROOT_URLCONF = 'gamingnight.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, "templates"),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -100,3 +100,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join( BASE_DIR, "dist_static")
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)

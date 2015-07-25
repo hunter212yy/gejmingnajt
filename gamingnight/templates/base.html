@@ -1,0 +1,12 @@
+{% load staticfiles %}<html>
+<head>
+	{% include "header.html" %}
+</head>
+<body>
+	{% include "navbar.html" %}
+	{% block content %}{% endblock %} 
+	{% include "footer.html" %}
+	<script type="text/javascript" src="{% static 'components/jquery/dist/jquery.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'components/materialize/dist/js/materialize.min.js' %}"></script>
+</body>
+</html>

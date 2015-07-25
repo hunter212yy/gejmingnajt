@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+<div class="section">
+	<div class="row">
+		<div class="col s8">
+			{% include "landing/logo.html" %}
+		</div>
+		<div class="col s4">
+			  <h5>Zaloguj się na konto</h5>
+			  <div class="row">
+			  	<div class="input-field col s12">
+			    	<input id="email" type="email" class="validate">
+			        <label for="email">Email</label>
+			    </div>
+			    <div class="input-field col s12">
+			    	<input id="password" type="password" class="validate">
+			        <label for="password">Haslo</label>
+			    </div>
+			    <div class="row">
+			    	<input type="submit" class="right btn" value="Zatwierdź" />
+			    </div> 
+			  </div>
+		</div>
+	</div>
+</div>
+{% endblock %}

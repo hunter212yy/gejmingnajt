@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+<div class="section">
+	<div class="row">
+		<div class="col s8">
+			qwe
+		</div>
+		<div class="col s4">
+			  <h5>Dołącz do wydarzenia</h5>
+
+			  <form action="{% url "registration-url" %}">
+			  <div class="row">
+			  	<div class="input-field col s12">
+			    	<input id="email" type="email" class="validate">
+			        <label for="email">Email</label>
+			    </div>
+				<div>
+					<div class="input-field col s6">
+				    	<input id="first_name" type="text" class="validate">
+				        <label for="first_name">Imię</label>
+				    </div>
+			    	<div class="input-field col s6">
+				    	<input id="last_name" type="text" class="validate">
+				        <label for="last_name">Nazwisko</label>
+				    </div>
+			    </div>
+
+		      	<div class="row center-align">
+			    	<small>Rejestrując się akceptujesz regulamin uczestnictwa i wyrażam zgodę na przetwarzanie moich danych osobowych przez organizatorów.</small>
+			    </div>
+			    <div class="row">
+			    	<input type="submit" class="right btn" value="Zatwierdź" />
+			    </div>
+			  </div>
+			  </form>
+		</div>
+	</div>
+</div>
+{% endblock %}
